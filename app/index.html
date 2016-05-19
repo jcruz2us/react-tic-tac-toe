@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF8">
+  <title>Tic Tac Toe</title>
+  <style type="text/css">
+    body {
+      font-family: Helvetica;
+    }
+    .page-header, .subheader {
+      text-align: center;
+    }
+
+    .tttboard {
+      width: 500px;
+      height: 500px;
+      background-color: white;
+      margin: 10px auto;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .tttboard .row {
+      display: flex;
+      flex-direction: row;
+      flex: 1 1 0;
+    }
+
+    .tttboard .box {
+      flex: 1 1 0;
+      border: 1px solid black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 92px;
+      cursor: pointer;
+    }
+
+    .tttboard .box:hover {
+      background-color: gainsboro;
+    }
+
+    /* resize board for smaller screens */
+    @media (max-width: 400px) {
+      .tttboard {
+        width: 380px;
+        height: 380px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="app"></div>
+  <script type="text/javascript" src="./index.output.js"></script>
+</body>
+</html>
